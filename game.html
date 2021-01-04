@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<title>Escape Room 20191</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="pragma" content="no-cache"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name ="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta charset="utf-8"/>
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+</head>
+
+<body onLoad="init()" style="border:0px;margin:0px;padding:0px;width:396px;height:396px;background-color:#FFF;">
+
+<!-- arrow buttons -->
+<button id="up" class="button" onclick="moveUp();" style="width:50px;height:50px;cursor:pointer;position:fixed;top:0px;left:175px;visibility:visible;border:2px solid;font:16px Arial;">&uarr;</button>
+<button id="down" class="button" onclick="moveDown();" style="width:50px;height:50px;cursor:pointer;position:fixed;top:350px;left:175px;visibility:visible;border:2px solid;font:16px Arial;">&darr;</button>
+<button id="left" class="button"  onclick="moveLeft();" style="width:50px;height:50px;cursor:pointer;position:fixed;top:175px;left:0px;visibility:visible;border:2px solid;font:16px Arial;">&larr;</button>
+<button id="right" class="button" onclick="moveRight();" style="width:50px;height:50px;cursor:pointer;position:fixed;top:175px;left:350px;visibility:visible;border:2px solid;font:16px Arial;">&rarr;</button>
+
+<!-- room -->
+<canvas id="room" width="396" height="396" style="z-index:-1;border-style:solid;border-width:2px;position:fixed;top:0px;left:0px;"></canvas>
+
+
+<script src="main.js"></script>
+
+</body>
